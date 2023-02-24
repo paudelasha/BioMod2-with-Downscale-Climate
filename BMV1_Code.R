@@ -1,6 +1,8 @@
 install.packages("tidyverse")
 library(tidyverse)
 library(dplyr)#for correlation matrix
+library(biomod2)
+library(raster)
 
 #Stacking soil and climate data
 setwd("C:/Users//paude/Desktop/BioMod2Try/try")

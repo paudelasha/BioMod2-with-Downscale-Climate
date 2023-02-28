@@ -6,6 +6,10 @@ library(dplyr)#for correlation matrix
 library(biomod2)
 library(raster)
 
+#Heat Load Index##
+dem.mosaic <- raster(here("C:/Users/paude/OneDrive - Colostate/Postdoc_CSU/Data/elevation/ele_30m_usgs/ele30_usgs.tif"))
+hli.rast <- hli(dem.mosaic, force.hemisphere = "northern")
+
 #Stacking soil and climate data
 setwd("C:/Users//paude/Desktop/BioMod2Try/try")
 rlist=list.files(pattern="tif$",full.names = TRUE)
